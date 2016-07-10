@@ -1,0 +1,13 @@
+{
+  "name": "ciklum-internship",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Sami"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "jquery": "^3.1.0"
+  }
+}
