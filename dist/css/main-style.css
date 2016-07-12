@@ -1,14 +1,28 @@
 .dropbox-wrap {
-  overflow: hidden;
+  width: 100%;
   height: 700px;
+  position: relative;
   font-family: "Open Sans", "lucida grande", "Segoe UI", arial, verdana, "lucida sans unicode", tahoma, sans-serif;
+  background: #f7f7f7;
+}
+.dropbox-wrap .dropbox-wrap_background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-image: url(../images/dropbox.jpg);
+  background-position: 108% center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .dropbox-wrap .dropbox-content {
   width: 990px;
   /*max-width:990px  100% for responsive*/
   height: 100%;
+  position: relative;
+  z-index: 2;
   margin: 0 auto;
-  padding-top: 75px;
+  padding-top: 100px;
   box-sizing: border-box;
 }
 .dropbox-wrap .dropbox-content .dropbox-content__text {
