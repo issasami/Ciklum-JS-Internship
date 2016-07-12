@@ -1,0 +1,70 @@
+.dropbox-wrap{
+	overflow: hidden;
+	height: 700px;
+	font-family: "Open Sans","lucida grande","Segoe UI",arial,verdana,"lucida sans unicode",tahoma,sans-serif;
+	
+	.dropbox-content{
+		width: 990px;     /*max-width:990px  100% for responsive*/
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 75px;
+    box-sizing: border-box;
+
+		.dropbox-content__text{
+			width: 45%;
+			color: #47525d;
+			
+			.text__item1,.text__item2{
+				margin-top:0;
+								font-weight: 100;
+			}
+			.text__item1{
+				margin-bottom:20px;  
+				font-size: 48px;
+				line-height: 1.2;
+			}
+			.text__item2{
+				font-size: 23px;
+			}
+		}
+
+		.dropbox-content__button{
+			width: 71%;
+			height: 100px;
+			margin-top:50px; 
+
+			.dropbox-content__button-link{
+				display: block;
+				height: 60px;
+				padding: 19px 26px;
+				line-height: 21px;
+				box-sizing: border-box;				
+				border-radius: 6px;
+				background: #0071e0;
+				font-size: 22px;
+				color: #fff;
+				text-decoration: none;
+				text-align: center;
+				&:hover{
+					background: #3398ea;
+				}
+			}
+
+			.dropbox-content__button-paragraph{
+				margin-top: 15px;
+				margin-bottom: 0;
+				font-size: 17px;
+				color: #47525d;
+				.paragraph__link{
+					border-bottom: 1px solid #0071e0;
+					color: #0071e0; 
+					text-decoration: none;
+
+					&:hover{
+						color: #3398ea;
+					}
+				}
+			}
+		}
+	}
+}
