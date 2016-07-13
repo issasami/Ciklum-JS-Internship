@@ -1,1 +1,125 @@
 /*INVISION*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+
+.icon-image {
+	display: inline-block;
+	vertical-align: middle;
+	height: 24px;
+	width: 24px;
+	background-image: url(../images/invision.png);
+	background-repeat: no-repeat;
+}
+
+.invision-wrap{
+	width: 100%;
+	height: 530px;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	background-color: #323a45;
+
+	.invision-content{
+		max-width: 1320px;    /* remember this is for responsive*/
+		height: 230px; 
+		font-family: "Open Sans", "open-sans", sans-serif;
+
+		.invision-content__head{
+			margin-top: 0;
+			margin-bottom: 55px;
+			text-align: center;
+			font-size:30px;
+			font-weight: 300;
+			line-height: 52px; 
+			color:#fff;
+		}
+
+		.invision-form{
+			overflow: hidden;
+			margin-bottom: 31px;
+
+			.invision-form__input{
+				position: relative;
+				float: left;
+				margin: 0;
+				line-height: 1.8em;
+
+				label{
+					position: absolute;
+					top: 0;
+					left: 0;
+					margin: 16px 0px 0px 50px;
+					font-size: 18px;
+					font-weight: 400;
+					color: #8a959e;
+				}
+
+				.icon{
+					position: absolute;
+					top: 18px;
+					left: 15px;
+				}
+
+				.user,.email,.lock{
+					.icon-image
+				}
+				
+				.user{
+					background-position: 0 -474px;
+				}
+				.email{
+					background-position: 0 -386px;
+				}
+				.lock{
+					background-position: 0 -430px;
+				}
+
+				input[type=text],input[type=email],input[type=password]{
+					width: 280px;
+					height: 63px;
+					margin-right: 10px;
+					padding: 18px 15px 18px 48px;
+					font: 400 18px/1em "Open Sans", "open-sans", sans-serif;
+					color: #8a959e;
+					border-radius: 3px;
+					border: 1px solid #d4d7da;
+					box-sizing: border-box;
+				}
+			}
+			
+			.invision-form__button{
+				height: 62px;
+				padding: 21px 40px 19px;
+				background: #ff3366;
+				border: 0;
+				border-radius: 5px;
+				color: white;
+				font: 700 15px/1em "brandon-grotesque", sans-serif;
+				text-transform: uppercase;
+				cursor: pointer;
+				-moz-transition: background 0.3s;
+				-o-transition: background 0.3s;
+				-webkit-transition: background 0.3s;
+				transition: background 0.3s;
+
+				&:hover{
+					background: #f42156;
+				}
+			}
+		}
+
+		.invision-content__terms{
+			text-align: center;
+			font-size: 12px;
+			line-height: 1.8em;
+			color: #747c83;
+
+			a{
+				color: #747c83;
+
+				&:hover{
+					color: #fff;
+				}
+			}
+		}
+	}
+}
