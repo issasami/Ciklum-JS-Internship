@@ -3,24 +3,16 @@
 		<h2 class="invision-content__head">Join over 2 million designers already using InVision. Get InVision 
 			<strong>free</strong> forever!
 		</h2>
-		<form class="invision-form" action="#" method="post">
-			<p class="invision-form__input">
-				<label for="signup_name">Your Name</label>
-				<i class="icon user"></i>
-				<input type="text" name="name" id="signup_name" value="" autocomplete="off" spellcheck="false">
-			</p>
+		<form class="invision-form" action="#" method="post" target="_blank">
 
-			<p class="invision-form__input">
-				<label for="signup_email">Email Address</label>
-				<i class="icon email"></i>
-				<input type="email" name="email" id="signup_email" required value="" autocomplete="off" spellcheck="false">
-			</p>
+			<i class="icon-user"></i>
+			<input type="text" required name="name" id="signup_name" value="" autocomplete="off" spellcheck="false" placeholder="Your Name">
 
-			<p class="invision-form__input">
-				<label for="signup_password">Create a Password</label>
-				<i class="icon lock"></i>
-				<input type="password" name="password" id="signup_password" value="" autocomplete="off" spellcheck="false">
-			</p>
+			<i class="icon-email"></i>
+			<input type="email" required name="email" id="signup_email" value="" autocomplete="off" spellcheck="false" placeholder="Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title=".domain(3 letters)">
+
+			<i class="icon-lock"></i>
+			<input type="password" required name="password" id="signup_password" value="" autocomplete="off" spellcheck="false" placeholder="Create a Password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*"  title="The password field: Must contain at least one number, one digit, one letter in upper case and one in the lower!">
 
 			<button class="invision-form__button" type="submit">Get Started — Free Forever!</button>
 		</form>
