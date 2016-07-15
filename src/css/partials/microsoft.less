@@ -1,4 +1,203 @@
 /*MICROSOFT*/
+.links{
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	color: #2F2F2F;
+	transition: background-color ease-out .5s;
+}
+
+.linkshover{
+	background-color: #f2f2f2;
+	transition: background-color ease-out .5s;
+}
+
+
 body{
 	margin:0;
+}
+
+.microsoft-wrap{
+	width: 100%;
+	height: 50px;
+
+	.microsoft-content{
+		width: 90%;
+		height: inherit;
+		margin: 0 auto;
+		box-sizing: border-box;
+		font-family: "Segoe UI","Segoe UI Web Regular","Segoe UI Symbol","Helvetica Neue","BBAlpha Sans","S60 Sans",Arial,sans-serif;
+
+		.microsoft-logo{
+			float: left;
+			margin-right: 1.3%;
+			margin-top: 13px;
+
+			.microsoft-logo__link{
+				display: block;
+				width: 108px;
+				height: 23px;
+
+				img{
+					width: 100%;
+				}
+			}
+		}
+
+		.microsoft-nav{
+			float: left;
+			width: 21%;
+			height: inherit;
+
+			.microsoft-list{
+				height: inherit;
+				padding: 0;
+				margin: 0;
+				list-style: none;
+
+				.microsoft-list__item{
+					float: left;
+					width: 33%;
+					height: inherit;
+
+					a{
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						.links;
+
+						&:hover{
+							.linkshover;
+						} 
+
+						.fa-angle-down{
+							margin-top: 5px;
+							font-size: 12px;
+							margin-left: 5px;
+						}
+					}
+				}
+			}
+		}
+
+		.microsoft-user{
+			float: right;
+			width: 7%;
+			height: inherit;
+			overflow: hidden;
+			padding: 8px 10px 0 10px;
+			box-sizing: border-box;
+			transition: background-color ease-out .5s;
+
+			&:hover{
+				cursor: pointer;
+				.linkshover
+			}
+
+			.microsoft-user__name{
+				float: left;
+				font-size: 11px;
+				margin-right: 21%;
+			}
+
+			img{
+				height: 36px;
+				width: 36px;
+			}
+		}
+
+		.microsoft-search{
+			float: right;
+			height: inherit;
+			overflow: hidden;;
+			box-sizing: border-box;
+
+			form{
+				float: left;
+				margin-top: 8px;
+				margin-right: 5px;
+
+				.microsoft-search__field{
+					float: left;
+					width: 244px;
+					height: 36px;
+					padding: 0 10px;
+					font-size: 15px;
+					font-family: "Segoe UI","Segoe UI Web Regular","Segoe UI Symbol","Helvetica Neue","BBAlpha Sans","S60 Sans",Arial,sans-serif;
+					color: #2F2F2F;
+					line-height: 1.5;
+					outline: none;
+					border: 1px solid #A9A9A9;
+					border-right: 0; 
+					box-sizing: border-box;
+
+						&::-webkit-input-placeholder{
+							color: #2F2F2F;
+						}
+						&:focus::-moz-placeholder{
+							color: #2F2F2F;
+						}         
+						&:focus:-moz-placeholder{
+							color: #2F2F2F;
+						}        
+						&:focus:-ms-input-placeholder{
+							color: #2F2F2F;
+						}
+
+						&::-webkit-search-cancel-button{
+							display: none;
+						}
+					}
+
+				.microsoft-search__button{
+					width: 33px;
+					height: 36px;
+					font-size: 19px;
+					padding: 0;
+					background-color: transparent;
+					border: 1px solid #A9A9A9;
+					border-left: none;
+					outline: none;
+					cursor: pointer;
+
+					&:hover{
+						color: #0078D7;
+					}
+
+					.fa-neuter{
+						transform:rotate(45deg);
+					}
+				}
+			}
+		}
+
+		.microsoft-search__bucket{
+			float: left;
+			width: 50px;
+			height: inherit;
+			text-align: center;
+			box-sizing: border-box;
+
+			a{
+				display: block;
+				position: relative;
+				.links;
+				padding: 18px 0;
+				font-size: 12px;
+				box-sizing: border-box;
+
+				&:hover{
+					.linkshover;
+				}
+
+				&:active{
+					color: #2F2F2F;
+				}
+
+				.fa-shopping-cart{
+					font-size: 19px;
+				}
+			}
+		}
+	}
 }
