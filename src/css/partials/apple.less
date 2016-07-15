@@ -12,8 +12,20 @@
 	font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
 
 	.apple-content{
-		width: 59%;
+		max-width: 980px; //max-width:980px  100% for responsive
+		width: 100%;
 		margin: 0 auto;
+		overflow: hidden;
+
+		a{
+			text-decoration: none;
+			color: #666;
+
+			&:hover{
+				color: #333;
+				text-decoration:underline;
+			}
+		}
 
 		.apple-nav{
 			width: 100%;
@@ -45,6 +57,7 @@
 							color: #666;
 
 							&:hover{
+								color: #333;
 								text-decoration: underline;
 							}
 						}
@@ -55,6 +68,63 @@
 
 		.apple-copyright{
 			width: 100%;
+			margin-top:20px;
+			margin-bottom: 24px;
+			font-size: 12px;
+			color: #999; 
+			overflow: hidden;
+
+			.apple-copyright__text{
+				margin-top: 0;
+				margin-bottom: 6px;
+				padding-bottom: 5px;
+				border-bottom: 1px solid #e3e3e3;
+
+				a{
+					color: #08c;
+					
+					&:hover{
+						color: #333;
+					}
+				}
+			}
+
+			.apple-copyright__inc{
+				float: left;
+				margin-right: 26px;
+
+				p{
+					margin: 0;
+				} 
+			}
+
+			.apple-copyright__links{
+				float: left;
+
+				a{
+					border-right: 1px solid #d6d6d6;
+					margin-right: 10px;
+					padding-right: 12px;
+
+					&:last-child{
+						border: none;
+					}
+				}
+			}
+
+			.apple-copyright__locale{
+				float: right;
+
+				&:before {
+					content: " ";
+					float: left;
+					width: 16px;
+					height: 16px;
+					margin-top: 1px;
+					margin-right: 5px;
+					background-image: url(../images/locale.png);
+				}
+			}
 		}
 	}
 }

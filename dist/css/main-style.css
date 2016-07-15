@@ -11,8 +11,18 @@
   font-family: "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 .apple-wrap .apple-content {
-  width: 59%;
+  max-width: 980px;
+  width: 100%;
   margin: 0 auto;
+  overflow: hidden;
+}
+.apple-wrap .apple-content a {
+  text-decoration: none;
+  color: #666;
+}
+.apple-wrap .apple-content a:hover {
+  color: #333;
+  text-decoration: underline;
 }
 .apple-wrap .apple-content .apple-nav {
   width: 100%;
@@ -43,10 +53,58 @@
   color: #666;
 }
 .apple-wrap .apple-content .apple-nav .apple-nav__item .apple-nav__item_list li .apple-nav__item_link:hover {
+  color: #333;
   text-decoration: underline;
 }
 .apple-wrap .apple-content .apple-copyright {
   width: 100%;
+  margin-top: 20px;
+  margin-bottom: 24px;
+  font-size: 12px;
+  color: #999;
+  overflow: hidden;
+}
+.apple-wrap .apple-content .apple-copyright .apple-copyright__text {
+  margin-top: 0;
+  margin-bottom: 6px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e3e3e3;
+}
+.apple-wrap .apple-content .apple-copyright .apple-copyright__text a {
+  color: #08c;
+}
+.apple-wrap .apple-content .apple-copyright .apple-copyright__text a:hover {
+  color: #333;
+}
+.apple-wrap .apple-content .apple-copyright .apple-copyright__inc {
+  float: left;
+  margin-right: 26px;
+}
+.apple-wrap .apple-content .apple-copyright .apple-copyright__inc p {
+  margin: 0;
+}
+.apple-wrap .apple-content .apple-copyright .apple-copyright__links {
+  float: left;
+}
+.apple-wrap .apple-content .apple-copyright .apple-copyright__links a {
+  border-right: 1px solid #d6d6d6;
+  margin-right: 10px;
+  padding-right: 12px;
+}
+.apple-wrap .apple-content .apple-copyright .apple-copyright__links a:last-child {
+  border: none;
+}
+.apple-wrap .apple-content .apple-copyright .apple-copyright__locale {
+  float: right;
+}
+.apple-wrap .apple-content .apple-copyright .apple-copyright__locale:before {
+  content: " ";
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin-top: 1px;
+  margin-right: 5px;
+  background-image: url(../images/locale.png);
 }
 /*DROPBOX*/
 .dropbox-wrap {
