@@ -25,9 +25,10 @@ gulp.task('style', function(){
 } )
 
 gulp.task('script', function(){
-	return gulp.src('src/scripts')
-						.pipe(less())
-						.pipe(gulp.dest('dist/script'))
+	return gulp.src('src/scripts/script.js')
+						.pipe(rigger())
+						.pipe(uglify())
+						.pipe(gulp.dest('dist/scripts'))
 						.pipe(browsersync.reload({stream: true}))
 } )
 

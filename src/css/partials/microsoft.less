@@ -1,4 +1,6 @@
 /*MICROSOFT*/
+//My Mixins
+
 .links{
 	width: 100%;
 	height: 100%;
@@ -9,7 +11,15 @@
 
 .linkshover{
 	background-color: #f2f2f2;
-	transition: background-color ease-out .5s;
+	transition: background-color ease-out 0s;
+}
+
+.dropdownlinks{
+	display: block;
+	width: 100%;
+	height: 55px;
+	padding: 17px 24px;
+	box-sizing: border-box;
 }
 
 
@@ -46,10 +56,11 @@ body{
 
 		.microsoft-nav{
 			float: left;
-			width: 21%;
+			width: 315px;
 			height: inherit;
 
 			.microsoft-list{
+				width: 100%;
 				height: inherit;
 				padding: 0;
 				margin: 0;
@@ -70,10 +81,62 @@ body{
 							.linkshover;
 						} 
 
+						&:focus{
+							background-color: #f2f2f2;
+						}
+
 						.fa-angle-down{
 							margin-top: 5px;
 							font-size: 12px;
 							margin-left: 5px;
+						}
+					}
+
+					.microsoft-dropdown{
+						position: absolute;
+						z-index: 1;
+						width: 240px;
+						height: 440px;
+						background-color: #f2f2f2;
+						display: none;
+
+
+						.microsoft-dropdown__item{
+							.dropdownlinks;
+
+							&:hover:first-child{
+								text-decoration: underline;
+							}
+
+							&:hover{
+								background-color: #e5e5e5;
+							}
+
+							.fa-angle-right{
+								float: right;
+								margin: 5px 0; 
+								font-size: 12px;
+							}
+						}
+
+						.microsoft-dropdown__subcategory{
+							position: absolute;
+							width: 300px;
+							height: 440px;
+							top: 0;
+							left: 100%;
+							background-color: #e5e5e5;
+							display: none;
+							
+							.microsoft-dropdown__subcategory_item{
+								.dropdownlinks;
+
+								&:hover{
+									 background-color: #d9d9d9;
+									 text-decoration: underline;
+
+								}
+							}
 						}
 					}
 				}
@@ -82,7 +145,7 @@ body{
 
 		.microsoft-user{
 			float: right;
-			width: 7%;
+			width: 105px;
 			height: inherit;
 			overflow: hidden;
 			padding: 8px 10px 0 10px;
