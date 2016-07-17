@@ -2229,6 +2229,7 @@
 }
 body {
   margin: 0;
+  min-width: 320px;
 }
 .microsoft-wrap {
   max-width: 1680px;
@@ -2531,6 +2532,15 @@ body {
   margin: 0 auto;
   background-color: #f2f2f2;
 }
+@media all and (min-width: 1681px) {
+  .microsoft-wrap .microsoft-content {
+    width: 100%;
+    margin: 0;
+  }
+  .microsoft-wrap .microsoft-content .microsoft-search {
+    display: block!important;
+  }
+}
 @media all and (min-width: 1025px) and (max-width: 1280px) {
   .microsoft-wrap .microsoft-content .microsoft-search {
     display: block!important;
@@ -2585,7 +2595,7 @@ body {
     display: block;
   }
 }
-@media all and (min-width: 320px) and (max-width: 960px) {
+@media all and (max-width: 960px) {
   .microsoft-wrap .microsoft-content .microsoft-nav {
     display: none;
     position: absolute;
@@ -2674,6 +2684,13 @@ body {
   position: relative;
   font-family: "Open Sans", "lucida grande", "Segoe UI", arial, verdana, "lucida sans unicode", tahoma, sans-serif;
   background-color: #f7f7f7;
+  transition: all 1s ease;
+}
+.dropbox-wrap .dropbox-wrap_background {
+  max-width: 1680px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
   background-image: url(../images/dropbox.jpg);
   background-position: 108% center;
   background-repeat: no-repeat;
@@ -2746,192 +2763,195 @@ body {
 .dropbox-wrap .dropbox-content .dropbox-content__button .dropbox-content__button-paragraph .paragraph__link:hover {
   color: #3398ea;
 }
-@media all and (min-width: 1681px) and (max-width: 1921px) {
-  .dropbox-wrap {
+@media all and (min-width: 1681px) {
+  .dropbox-wrap .dropbox-wrap_background {
     background-position: 100% center;
   }
-  .dropbox-wrap .dropbox-content {
+  .dropbox-wrap .dropbox-wrap_background .dropbox-content {
     width: 60%;
     margin: 0 0 0 13%;
   }
 }
-@media all and (min-width: 1575px) and (max-width: 1650px) {
-  .dropbox-wrap {
+@media all and (min-width: 1575px) and (max-width: 1680px) {
+  .dropbox-wrap .dropbox-wrap_background {
     background-position: 115% center;
+  }
+  .dropbox-wrap .dropbox-wrap_background .dropbox-content {
+    margin: 0 0 0 15%;
   }
 }
 @media all and (min-width: 1501px) and (max-width: 1574px) {
-  .dropbox-wrap {
+  .dropbox-wrap .dropbox-wrap_background {
     background-position: 125% center;
   }
 }
 @media all and (min-width: 1367px) and (max-width: 1500px) {
-  .dropbox-wrap {
+  .dropbox-wrap .dropbox-wrap_background {
     background-position: 575px center;
   }
 }
 @media all and (min-width: 1201px) and (max-width: 1366px) {
-  .dropbox-wrap {
+  .dropbox-wrap .dropbox-wrap_background {
     background-position: 575px center;
   }
 }
 @media all and (min-width: 1025px) and (max-width: 1200px) {
-  .dropbox-wrap {
+  .dropbox-wrap .dropbox-wrap_background {
     background-position: 575px center;
   }
-  .dropbox-wrap .dropbox-content .dropbox-content__text {
+  .dropbox-wrap .dropbox-wrap_background .dropbox-content .dropbox-content__text {
     width: 50%;
   }
-  .dropbox-wrap .dropbox-content .dropbox-content__text .text__item1 {
+  .dropbox-wrap .dropbox-wrap_background .dropbox-content .dropbox-content__text .text__item1 {
     font-size: 31px;
   }
-  .dropbox-wrap .dropbox-content .dropbox-content__text .text__item2 {
+  .dropbox-wrap .dropbox-wrap_background .dropbox-content .dropbox-content__text .text__item2 {
     font-size: 16px;
   }
-  .dropbox-wrap .dropbox-content .dropbox-content__button {
+  .dropbox-wrap .dropbox-wrap_background .dropbox-content .dropbox-content__button {
     width: 58%;
   }
-  .dropbox-wrap .dropbox-content .dropbox-content__button .dropbox-content__button-link {
+  .dropbox-wrap .dropbox-wrap_background .dropbox-content .dropbox-content__button .dropbox-content__button-link {
     font-size: 16px;
   }
 }
 @media all and (min-width: 961px) and (max-width: 1024px) {
-  .dropbox-wrap {
+  .dropbox-wrap .dropbox-wrap_background {
     background-position: 425px top;
     background-size: cover;
   }
-  .dropbox-wrap .dropbox-content {
+  .dropbox-wrap .dropbox-wrap_background .dropbox-content {
     margin: 0 0 0 2%;
   }
-  .dropbox-wrap .dropbox-content .dropbox-content__text {
+  .dropbox-wrap .dropbox-wrap_background .dropbox-content .dropbox-content__text {
     width: 50%;
   }
-  .dropbox-wrap .dropbox-content .dropbox-content__text .text__item1 {
+  .dropbox-wrap .dropbox-wrap_background .dropbox-content .dropbox-content__text .text__item1 {
     font-size: 31px;
   }
-  .dropbox-wrap .dropbox-content .dropbox-content__text .text__item2 {
+  .dropbox-wrap .dropbox-wrap_background .dropbox-content .dropbox-content__text .text__item2 {
     font-size: 16px;
   }
-  .dropbox-wrap .dropbox-content .dropbox-content__button {
+  .dropbox-wrap .dropbox-wrap_background .dropbox-content .dropbox-content__button {
     width: 60%;
   }
-  .dropbox-wrap .dropbox-content .dropbox-content__button .dropbox-content__button-link {
+  .dropbox-wrap .dropbox-wrap_background .dropbox-content .dropbox-content__button .dropbox-content__button-link {
     font-size: 16px;
   }
-  .dropbox-wrap .dropbox-content .dropbox-content__button .dropbox-content__button-paragraph {
+  .dropbox-wrap .dropbox-wrap_background .dropbox-content .dropbox-content__button .dropbox-content__button-paragraph {
     box-sizing: border-box;
     padding-left: 30%;
   }
 }
 @media all and (min-width: 721px) and (max-width: 960px) {
-  .dropbox-wrap {
+  .dropbox-wrap .dropbox-wrap_background {
     background-position: 425px top;
     background-size: cover;
   }
-  .dropbox-wrap .dropbox-content {
+  .dropbox-wrap .dropbox-wrap_background .dropbox-content {
     margin: 0 0 0 2%;
   }
-  .dropbox-wrap .dropbox-content .dropbox-content__text {
+  .dropbox-wrap .dropbox-wrap_background .dropbox-content .dropbox-content__text {
     width: 50%;
   }
-  .dropbox-wrap .dropbox-content .dropbox-content__text .text__item1 {
+  .dropbox-wrap .dropbox-wrap_background .dropbox-content .dropbox-content__text .text__item1 {
     font-size: 31px;
   }
-  .dropbox-wrap .dropbox-content .dropbox-content__text .text__item2 {
+  .dropbox-wrap .dropbox-wrap_background .dropbox-content .dropbox-content__text .text__item2 {
     font-size: 16px;
   }
-  .dropbox-wrap .dropbox-content .dropbox-content__button {
+  .dropbox-wrap .dropbox-wrap_background .dropbox-content .dropbox-content__button {
     width: 60%;
   }
-  .dropbox-wrap .dropbox-content .dropbox-content__button .dropbox-content__button-link {
+  .dropbox-wrap .dropbox-wrap_background .dropbox-content .dropbox-content__button .dropbox-content__button-link {
     padding: 18px 24px;
     font-size: 16px;
     height: 70px;
   }
-  .dropbox-wrap .dropbox-content .dropbox-content__button .dropbox-content__button-paragraph {
+  .dropbox-wrap .dropbox-wrap_background .dropbox-content .dropbox-content__button .dropbox-content__button-paragraph {
     box-sizing: border-box;
     padding-left: 25%;
   }
 }
 @media all and (min-width: 601px) and (max-width: 720px) {
-  .dropbox-wrap {
+  .dropbox-wrap .dropbox-wrap_background {
     background-position: 425px top;
     background-size: cover;
   }
-  .dropbox-wrap .dropbox-content {
+  .dropbox-wrap .dropbox-wrap_background .dropbox-content {
     margin: 0 0 0 15%;
     width: 75%;
   }
-  .dropbox-wrap .dropbox-content .dropbox-content__text {
+  .dropbox-wrap .dropbox-wrap_background .dropbox-content .dropbox-content__text {
     width: 75%;
   }
-  .dropbox-wrap .dropbox-content .dropbox-content__text .text__item1 {
+  .dropbox-wrap .dropbox-wrap_background .dropbox-content .dropbox-content__text .text__item1 {
     font-size: 31px;
   }
-  .dropbox-wrap .dropbox-content .dropbox-content__text .text__item2 {
+  .dropbox-wrap .dropbox-wrap_background .dropbox-content .dropbox-content__text .text__item2 {
     width: 84%;
     font-size: 16px;
   }
-  .dropbox-wrap .dropbox-content .dropbox-content__button {
+  .dropbox-wrap .dropbox-wrap_background .dropbox-content .dropbox-content__button {
     width: 80%;
   }
-  .dropbox-wrap .dropbox-content .dropbox-content__button .dropbox-content__button-link {
+  .dropbox-wrap .dropbox-wrap_background .dropbox-content .dropbox-content__button .dropbox-content__button-link {
     padding: 18px 24px;
     font-size: 16px;
     height: 70px;
   }
-  .dropbox-wrap .dropbox-content .dropbox-content__button .dropbox-content__button-paragraph {
+  .dropbox-wrap .dropbox-wrap_background .dropbox-content .dropbox-content__button .dropbox-content__button-paragraph {
     box-sizing: border-box;
     padding-left: 25%;
   }
 }
 @media all and (min-width: 481px) and (max-width: 600px) {
-  .dropbox-wrap {
-    background-position: 325px top;
+  .dropbox-wrap .dropbox-wrap_background {
+    background-position: 425px top;
     background-size: cover;
   }
-  .dropbox-wrap .dropbox-content {
+  .dropbox-wrap .dropbox-wrap_background .dropbox-content {
     width: 80%;
   }
-  .dropbox-wrap .dropbox-content .dropbox-content__text {
+  .dropbox-wrap .dropbox-wrap_background .dropbox-content .dropbox-content__text {
     width: 75%;
   }
-  .dropbox-wrap .dropbox-content .dropbox-content__text .text__item1 {
+  .dropbox-wrap .dropbox-wrap_background .dropbox-content .dropbox-content__text .text__item1 {
     font-size: 26px;
   }
-  .dropbox-wrap .dropbox-content .dropbox-content__text .text__item2 {
+  .dropbox-wrap .dropbox-wrap_background .dropbox-content .dropbox-content__text .text__item2 {
     width: 84%;
     font-size: 16px;
   }
-  .dropbox-wrap .dropbox-content .dropbox-content__button {
+  .dropbox-wrap .dropbox-wrap_background .dropbox-content .dropbox-content__button {
     width: 90%;
   }
-  .dropbox-wrap .dropbox-content .dropbox-content__button .dropbox-content__button-link {
+  .dropbox-wrap .dropbox-wrap_background .dropbox-content .dropbox-content__button .dropbox-content__button-link {
     padding: 18px 24px;
     font-size: 16px;
     height: 70px;
   }
-  .dropbox-wrap .dropbox-content .dropbox-content__button .dropbox-content__button-paragraph {
+  .dropbox-wrap .dropbox-wrap_background .dropbox-content .dropbox-content__button .dropbox-content__button-paragraph {
     box-sizing: border-box;
     padding-left: 25%;
   }
 }
-@media all and (min-width: 320px) and (max-width: 480px) {
-  .dropbox-wrap {
-    background-size: cover;
+@media all and (max-width: 480px) {
+  .dropbox-wrap .dropbox-wrap_background {
     background-image: none;
-    height: 450px;
+    background-position: 425px top;
+    background-size: cover;
   }
-  .dropbox-wrap .dropbox-content {
+  .dropbox-wrap .dropbox-wrap_background .dropbox-content {
     width: 100%;
     padding: 0;
     position: relative;
   }
-  .dropbox-wrap .dropbox-content .dropbox-content__text {
+  .dropbox-wrap .dropbox-wrap_background .dropbox-content .dropbox-content__text {
     width: 100%;
     margin: 0 auto;
   }
-  .dropbox-wrap .dropbox-content .dropbox-content__text .text__item1 {
+  .dropbox-wrap .dropbox-wrap_background .dropbox-content .dropbox-content__text .text__item1 {
     width: 90%;
     position: absolute;
     top: 3%;
@@ -2939,7 +2959,7 @@ body {
     text-align: center;
     font-size: 26px;
   }
-  .dropbox-wrap .dropbox-content .dropbox-content__text .text__item2 {
+  .dropbox-wrap .dropbox-wrap_background .dropbox-content .dropbox-content__text .text__item2 {
     width: 73%;
     position: absolute;
     top: 28%;
@@ -2948,19 +2968,19 @@ body {
     text-align: center;
     font-size: 16px;
   }
-  .dropbox-wrap .dropbox-content .dropbox-content__button {
+  .dropbox-wrap .dropbox-wrap_background .dropbox-content .dropbox-content__button {
     width: 95%;
     position: absolute;
     top: 55%;
     left: 2.5%;
     margin: 25px auto;
   }
-  .dropbox-wrap .dropbox-content .dropbox-content__button .dropbox-content__button-link {
+  .dropbox-wrap .dropbox-wrap_background .dropbox-content .dropbox-content__button .dropbox-content__button-link {
     padding: 24px 24px;
     font-size: 16px;
     height: 95px;
   }
-  .dropbox-wrap .dropbox-content .dropbox-content__button .dropbox-content__button-paragraph {
+  .dropbox-wrap .dropbox-wrap_background .dropbox-content .dropbox-content__button .dropbox-content__button-paragraph {
     box-sizing: border-box;
     padding-left: 19%;
   }
@@ -2982,10 +3002,9 @@ body {
   background-color: #323a45;
 }
 .invision-wrap .invision-content {
-  max-width: 1320px;
+  max-width: 1680px;
   /* remember this is for responsive*/
   width: 100%;
-  height: 230px;
   font-family: "Open Sans", "open-sans", sans-serif;
 }
 .invision-wrap .invision-content .invision-content__head {
@@ -2997,6 +3016,7 @@ body {
   font-weight: 300;
   line-height: 52px;
   color: #fff;
+  transition: all 1s ease;
 }
 .invision-wrap .invision-content .invision-form {
   position: relative;
@@ -3019,16 +3039,19 @@ body {
   top: 28%;
   left: 6%;
   background-position: 0 -474px;
+  transition: all .5s ease;
 }
 .invision-wrap .invision-content .invision-form .icon-email {
   top: 28%;
   left: 28%;
   background-position: 0 -386px;
+  transition: all .5s ease;
 }
 .invision-wrap .invision-content .invision-form .icon-lock {
   top: 28%;
   left: 50%;
   background-position: 0 -430px;
+  transition: all .5s ease;
 }
 .invision-wrap .invision-content .invision-form input[type=text],
 .invision-wrap .invision-content .invision-form input[type=email],
@@ -3044,6 +3067,7 @@ body {
   border: 1px solid #d4d7da;
   box-sizing: border-box;
   outline: none;
+  transition: width 1s ease, margin 1s ease;
 }
 .invision-wrap .invision-content .invision-form input[type=text]:focus::-webkit-input-placeholder,
 .invision-wrap .invision-content .invision-form input[type=email]:focus::-webkit-input-placeholder,
@@ -3076,7 +3100,7 @@ body {
   -moz-outline-radius: 3px;
 }
 .invision-wrap .invision-content .invision-form .invision-form__button {
-  width: 25.5%;
+  width: 26.5%;
   height: 62px;
   background: #ff3366;
   border: 0;
@@ -3085,7 +3109,7 @@ body {
   font: 700 15px/1em "brandon-grotesque", sans-serif;
   text-transform: uppercase;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background 0.3s, width 1s ease, margin 1s ease;
 }
 .invision-wrap .invision-content .invision-form .invision-form__button:hover {
   background: #f42156;
@@ -3103,6 +3127,111 @@ body {
 .invision-wrap .invision-content .invision-content__terms a:hover {
   color: #fff;
 }
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+  .invision-wrap .invision-content .invision-content__head {
+    padding: 0 1%;
+    box-sizing: border-box;
+  }
+  .invision-wrap .invision-content .invision-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .invision-wrap .invision-content .invision-form input[type=text],
+  .invision-wrap .invision-content .invision-form input[type=email],
+  .invision-wrap .invision-content .invision-form input[type=password] {
+    width: 32%;
+  }
+  .invision-wrap .invision-content .invision-form .icon-user,
+  .invision-wrap .invision-content .invision-form .icon-email,
+  .invision-wrap .invision-content .invision-form .icon-lock {
+    top: 11%;
+  }
+  .invision-wrap .invision-content .invision-form .icon-email {
+    left: 36%;
+  }
+  .invision-wrap .invision-content .invision-form .icon-lock {
+    left: 66%;
+  }
+  .invision-wrap .invision-content .invision-form .invision-form__button {
+    width: 30%;
+    margin-top: 40px;
+  }
+}
+@media all and (min-width: 836px) and (max-width: 1025px) {
+  .invision-wrap .invision-content .invision-content__head {
+    padding: 0 1%;
+    box-sizing: border-box;
+  }
+  .invision-wrap .invision-content .invision-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .invision-wrap .invision-content .invision-form input[type=text],
+  .invision-wrap .invision-content .invision-form input[type=email],
+  .invision-wrap .invision-content .invision-form input[type=password] {
+    width: 32%;
+  }
+  .invision-wrap .invision-content .invision-form .icon-user,
+  .invision-wrap .invision-content .invision-form .icon-email,
+  .invision-wrap .invision-content .invision-form .icon-lock {
+    top: 11%;
+  }
+  .invision-wrap .invision-content .invision-form .icon-email {
+    left: 36%;
+  }
+  .invision-wrap .invision-content .invision-form .icon-lock {
+    left: 66%;
+  }
+  .invision-wrap .invision-content .invision-form .invision-form__button {
+    width: 35%;
+    margin-top: 40px;
+  }
+}
+@media all and (max-width: 835px) {
+  .invision-wrap .invision-content .invision-content__head {
+    font-size: 24px;
+    margin-bottom: 25px;
+    padding: 0 1%;
+    box-sizing: border-box;
+  }
+  .invision-wrap .invision-content .invision-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .invision-wrap .invision-content .invision-form input[type=text],
+  .invision-wrap .invision-content .invision-form input[type=email],
+  .invision-wrap .invision-content .invision-form input[type=password] {
+    width: 100%;
+    margin-right: 0;
+  }
+  .invision-wrap .invision-content .invision-form input[type=email] {
+    margin: 2% 0;
+  }
+  .invision-wrap .invision-content .invision-form .icon-user,
+  .invision-wrap .invision-content .invision-form .icon-email,
+  .invision-wrap .invision-content .invision-form .icon-lock {
+    left: 7%;
+  }
+  .invision-wrap .invision-content .invision-form .icon-user {
+    top: 6%;
+  }
+  .invision-wrap .invision-content .invision-form .icon-email {
+    top: 30%;
+  }
+  .invision-wrap .invision-content .invision-form .icon-lock {
+    top: 54%;
+  }
+  .invision-wrap .invision-content .invision-form .invision-form__button {
+    width: 65%;
+    margin-top: 40px;
+  }
+}
 /*OCULUS*/
 .ptext {
   text-align: center;
@@ -3111,16 +3240,23 @@ body {
 }
 .oculus-wrap {
   width: 100%;
+  background-color: #1b1d1f;
   overflow: hidden;
 }
-.oculus-wrap .oculus__item {
+.oculus-wrap .oculus-content {
+  max-width: 1680px;
+  width: 100%;
+  margin: 0 auto;
+}
+.oculus-wrap .oculus-content .oculus__item {
   float: left;
   width: 33.33%;
   height: 300px;
   overflow: hidden;
   background: #282828;
+  transition: all 1s ease;
 }
-.oculus-wrap .oculus__item .oculus__item-link {
+.oculus-wrap .oculus-content .oculus__item .oculus__item-link {
   display: flex;
   position: relative;
   width: 100%;
@@ -3129,11 +3265,11 @@ body {
   align-items: center;
   text-decoration: none;
 }
-.oculus-wrap .oculus__item .oculus__item-link:hover .oculus__item-link_background {
+.oculus-wrap .oculus-content .oculus__item .oculus__item-link:hover .oculus__item-link_background {
   transform: scale(1.1);
   opacity: 1;
 }
-.oculus-wrap .oculus__item .oculus__item-link .oculus__item-link_background {
+.oculus-wrap .oculus-content .oculus__item .oculus__item-link .oculus__item-link_background {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -3145,13 +3281,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.oculus-wrap .oculus__item .oculus__item-link .oculus__item-link__content {
+.oculus-wrap .oculus-content .oculus__item .oculus__item-link .oculus__item-link__content {
   width: 100%;
   padding: 0 32px;
   box-sizing: border-box;
   z-index: 5;
 }
-.oculus-wrap .oculus__item .oculus__item-link .oculus__item-link__content .link__content-text1 {
+.oculus-wrap .oculus-content .oculus__item .oculus__item-link .oculus__item-link__content .link__content-text1 {
   font-family: "Oculus Sans", "Arial", "Helvetica", sans-serif;
   line-height: 32px;
   color: #a4a5a6;
@@ -3162,7 +3298,7 @@ body {
   font-weight: 600;
   margin: 0;
 }
-.oculus-wrap .oculus__item .oculus__item-link .oculus__item-link__content .link__content-text2 {
+.oculus-wrap .oculus-content .oculus__item .oculus__item-link .oculus__item-link__content .link__content-text2 {
   font-family: "Oculus Sans", "Arial", "Helvetica", sans-serif;
   color: #fff;
   font-size: 22px;
@@ -3171,6 +3307,23 @@ body {
   font-weight: 600;
   margin: 0;
 }
+@media all and (min-width: 961px) and (max-width: 1150px) {
+  .oculus-wrap .oculus-content .oculus__item {
+    height: 275px;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 960px) {
+  .oculus-wrap .oculus-content .oculus__item {
+    height: 225px;
+  }
+}
+@media all and (max-width: 768px) {
+  .oculus-wrap .oculus-content .oculus__item {
+    width: 100%;
+    height: 300px
+				float: none;
+  }
+}
 /*APPLE*/
 @font-face {
   font-family: "Myriad Set Pro";
@@ -3178,7 +3331,6 @@ body {
 }
 .apple-wrap {
   width: 100%;
-  height: 365px;
   background-color: #f2f2f2;
   font-family: "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
@@ -3187,6 +3339,7 @@ body {
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
+  transition: all 1s ease;
 }
 .apple-wrap .apple-content a {
   text-decoration: none;
@@ -3210,6 +3363,7 @@ body {
   line-height: 1.66667;
   font-weight: 600;
   color: #333;
+  transition: all 1s ease;
 }
 .apple-wrap .apple-content .apple-nav .apple-nav__item .apple-nav__item_list {
   margin: 0;
@@ -3277,4 +3431,55 @@ body {
   margin-top: 1px;
   margin-right: 5px;
   background-image: url(../images/locale.png);
+}
+@media all and (min-width: 981px) and (max-width: 1024px) {
+  .apple-wrap .apple-content {
+    padding: 0 12px;
+    box-sizing: border-box;
+  }
+}
+@media all and (min-width: 811px) and (max-width: 980px) {
+  .apple-wrap .apple-content {
+    padding: 0 22px;
+    box-sizing: border-box;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 810px) {
+  .apple-wrap .apple-content {
+    padding: 0 22px;
+    box-sizing: border-box;
+  }
+  .apple-wrap .apple-content .apple-copyright__links {
+    float: none;
+    clear: both;
+  }
+}
+@media all and (max-width: 768px) {
+  .apple-wrap .apple-content {
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+  .apple-wrap .apple-content .apple-nav {
+    display: block;
+    padding-top: 32px;
+  }
+  .apple-wrap .apple-content .apple-nav .apple-nav__item {
+    width: 100%;
+    height: 40px;
+    margin: 0;
+  }
+  .apple-wrap .apple-content .apple-nav .apple-nav__item:nth-child(3),
+  .apple-wrap .apple-content .apple-nav .apple-nav__item:nth-child(4) {
+    height: 80px;
+  }
+  .apple-wrap .apple-content .apple-nav .apple-nav__item .apple-nav__item_head {
+    margin: 0!important;
+    font-size: 14px;
+    line-height: 2.78571;
+    font-weight: 400;
+    border-bottom: 1px solid #e3e3e3;
+  }
+  .apple-wrap .apple-content .apple-nav .apple-nav__item .apple-nav__item_list {
+    display: none;
+  }
 }
