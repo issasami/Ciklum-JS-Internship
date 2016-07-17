@@ -2217,19 +2217,31 @@
   padding: 17px 24px;
   box-sizing: border-box;
 }
+.hidebtns {
+  width: 100%;
+  height: 100%;
+  font-size: 25px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
 body {
   margin: 0;
 }
 .microsoft-wrap {
+  max-width: 1680px;
   width: 100%;
-  height: 50px;
+  margin: 0 auto;
 }
 .microsoft-wrap .microsoft-content {
   width: 90%;
-  height: inherit;
+  height: 50px;
   margin: 0 auto;
   box-sizing: border-box;
   font-family: "Segoe UI", "Segoe UI Web Regular", "Segoe UI Symbol", "Helvetica Neue", "BBAlpha Sans", "S60 Sans", Arial, sans-serif;
+  /*HIDE ITEMS*/
 }
 .microsoft-wrap .microsoft-content .microsoft-logo {
   float: left;
@@ -2347,6 +2359,7 @@ body {
   float: left;
   font-size: 11px;
   margin-right: 21%;
+  transition: all 1s ease;
 }
 .microsoft-wrap .microsoft-content .microsoft-user img {
   height: 36px;
@@ -2362,6 +2375,7 @@ body {
   float: left;
   margin-top: 8px;
   margin-right: 5px;
+  transition: all 1s ease;
 }
 .microsoft-wrap .microsoft-content .microsoft-search form .microsoft-search__field {
   float: left;
@@ -2437,6 +2451,221 @@ body {
 }
 .microsoft-wrap .microsoft-content .microsoft-search__bucket a .fa-shopping-cart {
   font-size: 19px;
+}
+.microsoft-wrap .microsoft-content .microsoft-sandwich {
+  display: none;
+  float: right;
+  width: 45px;
+  height: 50px;
+}
+.microsoft-wrap .microsoft-content .microsoft-sandwich button {
+  width: 100%;
+  height: 100%;
+  font-size: 25px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.microsoft-wrap .microsoft-content .microsoft-sandwich button:hover {
+  background-color: #f2f2f2;
+  transition: background-color ease-out 0s;
+}
+.microsoft-wrap .microsoft-content .microsoft-hide_nav {
+  display: none;
+  float: right;
+  height: 50px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.microsoft-wrap .microsoft-content .microsoft-hide_nav .microsoft-hide__bucket,
+.microsoft-wrap .microsoft-content .microsoft-hide_nav .microsoft-hide__search_button {
+  float: right;
+  width: 45px;
+  height: 100%;
+}
+.microsoft-wrap .microsoft-content .microsoft-hide_nav .microsoft-hide__bucket a {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #2F2F2F;
+  transition: background-color ease-out 0.5s;
+  font-size: 15px;
+  padding: 35% 15%;
+}
+.microsoft-wrap .microsoft-content .microsoft-hide_nav .microsoft-hide__bucket a:hover {
+  background-color: #f2f2f2;
+  transition: background-color ease-out 0s;
+}
+.microsoft-wrap .microsoft-content .microsoft-hide_nav .microsoft-hide__bucket a:active {
+  color: #2F2F2F;
+}
+.microsoft-wrap .microsoft-content .microsoft-hide_nav .microsoft-hide__bucket a .fa-shopping-cart {
+  font-size: 20px;
+}
+.microsoft-wrap .microsoft-content .microsoft-hide_nav .microsoft-hide__search_button button {
+  width: 100%;
+  height: 100%;
+  font-size: 25px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.microsoft-wrap .microsoft-content .microsoft-hide_nav .microsoft-hide__search_button button:hover {
+  background-color: #f2f2f2;
+  transition: background-color ease-out 0s;
+}
+.microsoft-wrap .microsoft-content .microsoft-hide_nav .microsoft-hide__search_button button .fa-neuter {
+  transform: rotate(45deg);
+}
+.microsoft-wrap .microsoft-search__hide {
+  display: none;
+  width: 90%;
+  height: 75px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+}
+@media all and (min-width: 1025px) and (max-width: 1280px) {
+  .microsoft-wrap .microsoft-content .microsoft-search {
+    display: block!important;
+  }
+}
+@media all and (min-width: 961px) and (max-width: 1024px) {
+  .microsoft-wrap .microsoft-content .microsoft-user {
+    width: 55px;
+  }
+  .microsoft-wrap .microsoft-content .microsoft-user .microsoft-user__name {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    margin: 0;
+  }
+  .microsoft-wrap .microsoft-content .microsoft-user img {
+    display: block;
+    margin: 0 auto;
+  }
+  .microsoft-wrap .microsoft-content .microsoft-search {
+    display: none;
+    float: none;
+    clear: both;
+  }
+  .microsoft-wrap .microsoft-content .microsoft-search form {
+    float: none;
+    width: 100%;
+    margin-top: 13px;
+    padding: 1% 16%;
+    box-sizing: border-box;
+  }
+  .microsoft-wrap .microsoft-content .microsoft-search form .microsoft-search__field {
+    width: 94%;
+    height: 30px;
+    border: none;
+  }
+  .microsoft-wrap .microsoft-content .microsoft-search form .microsoft-search__button {
+    height: 30px;
+    padding: 4px;
+    border: none;
+    background: #0078D7;
+    color: white;
+  }
+  .microsoft-wrap .microsoft-content .microsoft-search form .microsoft-search__button:hover {
+    background: #0060ac;
+    color: white;
+  }
+  .microsoft-wrap .microsoft-content .microsoft-search .microsoft-search__bucket {
+    display: none;
+  }
+  .microsoft-wrap .microsoft-content .microsoft-hide_nav {
+    display: block;
+  }
+}
+@media all and (min-width: 320px) and (max-width: 960px) {
+  .microsoft-wrap .microsoft-content .microsoft-nav {
+    display: none;
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    top: 50px;
+    right: 0;
+    z-index: 5;
+  }
+  .microsoft-wrap .microsoft-content .microsoft-nav .microsoft-list {
+    background-color: #f2f2f2;
+  }
+  .microsoft-wrap .microsoft-content .microsoft-nav .microsoft-list .microsoft-list__item {
+    float: none;
+    width: 100%;
+    height: 50px;
+    padding: 0 4%;
+    box-sizing: border-box;
+  }
+  .microsoft-wrap .microsoft-content .microsoft-nav .microsoft-list .microsoft-list__item #show-store .fa-angle-down {
+    margin-left: 84%;
+  }
+  .microsoft-wrap .microsoft-content .microsoft-nav .microsoft-list .microsoft-list__item #show-product .fa-angle-down {
+    margin-left: 75%;
+  }
+  .microsoft-wrap .microsoft-content .microsoft-nav .microsoft-list .microsoft-list__item a {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .microsoft-wrap .microsoft-content .microsoft-user {
+    width: 40px;
+    padding: 8px 0;
+  }
+  .microsoft-wrap .microsoft-content .microsoft-user .microsoft-user__name {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    margin: 0;
+  }
+  .microsoft-wrap .microsoft-content .microsoft-user img {
+    display: block;
+    margin: 0 auto;
+  }
+  .microsoft-wrap .microsoft-content .microsoft-search {
+    display: none;
+    float: none;
+    clear: both;
+  }
+  .microsoft-wrap .microsoft-content .microsoft-search form {
+    float: none;
+    width: 100%;
+    margin-top: 13px;
+    padding: 1% 16%;
+    box-sizing: border-box;
+  }
+  .microsoft-wrap .microsoft-content .microsoft-search form .microsoft-search__field {
+    width: 94%;
+    height: 30px;
+    border: none;
+  }
+  .microsoft-wrap .microsoft-content .microsoft-search form .microsoft-search__button {
+    height: 30px;
+    padding: 4px;
+    border: none;
+    background: #0078D7;
+    color: white;
+  }
+  .microsoft-wrap .microsoft-content .microsoft-search form .microsoft-search__button:hover {
+    background: #0060ac;
+    color: white;
+  }
+  .microsoft-wrap .microsoft-content .microsoft-search .microsoft-search__bucket {
+    display: none;
+  }
+  .microsoft-wrap .microsoft-content .microsoft-hide_nav {
+    display: block;
+  }
+  .microsoft-wrap .microsoft-content .microsoft-sandwich {
+    display: block;
+  }
 }
 /*DROPBOX*/
 .dropbox-wrap {
@@ -2517,7 +2746,7 @@ body {
 .dropbox-wrap .dropbox-content .dropbox-content__button .dropbox-content__button-paragraph .paragraph__link:hover {
   color: #3398ea;
 }
-@media all and (min-width: 1681px) and (max-width: 1920px) {
+@media all and (min-width: 1681px) and (max-width: 1921px) {
   .dropbox-wrap {
     background-position: 100% center;
   }

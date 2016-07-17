@@ -1,0 +1,186 @@
+@media all and (min-width: 1025px) and (max-width: 1280px){
+
+	.microsoft-wrap{
+
+		.microsoft-content{
+
+			.microsoft-search{
+				display: block!important;
+			}
+		}
+	}
+}
+
+@media all and (min-width: 961px) and (max-width: 1024px) {
+
+	.microsoft-wrap{
+
+		.microsoft-content{
+
+			.microsoft-user{
+				width: 55px;
+				.microsoft-user__name{
+					opacity: 0;
+					width: 0;
+					height: 0;
+					margin: 0;
+				}
+
+				img{
+					display: block;
+					margin: 0 auto;
+				}
+			}
+
+			.microsoft-search{
+				display: none;
+				float: none;
+				clear: both;
+
+				form{
+					float: none;
+					width: 100%;
+					margin-top: 13px;
+					padding: 1% 16%;
+					box-sizing: border-box;
+
+					.microsoft-search__field{
+						width: 94%;
+						height: 30px;
+						border: none;
+					}
+
+					.microsoft-search__button{
+						height: 30px;
+						padding: 4px;
+						border: none;
+						background: #0078D7;
+						color: white;
+
+						&:hover{
+							background: #0060ac;
+							color: white;
+						}
+					}
+				}
+
+				.microsoft-search__bucket{
+					display: none;
+				}
+			}
+
+			.microsoft-hide_nav{
+				display: block;
+			}
+		}
+	}
+}
+
+@media all and (min-width: 320px) and (max-width: 960px) {
+	
+	.microsoft-wrap{
+
+		.microsoft-content{
+
+			.microsoft-nav{
+				display: none;
+				position: absolute;
+				width: 300px;
+				height: 100%;
+				top: 50px;
+				right: 0;
+				z-index:5;
+
+				.microsoft-list{
+					background-color: #f2f2f2;
+
+					.microsoft-list__item{
+						float: none;
+						width: 100%;
+						height: 50px;
+						padding: 0 4%;
+						box-sizing: border-box; 
+
+						#show-store{
+							.fa-angle-down{
+								margin-left: 84%;
+							}
+						}
+
+						#show-product{
+							.fa-angle-down{
+								margin-left: 75%;
+							}
+						}
+
+						a{
+							width: 100%;
+							justify-content:  flex-start;
+						}
+					}
+				}
+			}
+
+			.microsoft-user{
+				width: 40px;
+				padding: 8px 0; 
+				.microsoft-user__name{
+					opacity: 0;
+					width: 0;
+					height: 0;
+					margin: 0;
+				}
+
+				img{
+					display: block;
+					margin: 0 auto;
+				}
+			}
+
+			.microsoft-search{
+				display: none;
+				float: none;
+				clear: both;
+
+				form{
+					float: none;
+					width: 100%;
+					margin-top: 13px;
+					padding: 1% 16%;
+					box-sizing: border-box;
+
+					.microsoft-search__field{
+						width: 94%;
+						height: 30px;
+						border: none;
+					}
+
+					.microsoft-search__button{
+						height: 30px;
+						padding: 4px;
+						border: none;
+						background: #0078D7;
+						color: white;
+
+						&:hover{
+							background: #0060ac;
+							color: white;
+						}
+					}
+				}
+
+				.microsoft-search__bucket{
+					display: none;
+				}
+			}
+
+			.microsoft-hide_nav{
+				display: block;
+			}
+
+			.microsoft-sandwich{
+				display: block;
+			}
+		}
+	}
+}

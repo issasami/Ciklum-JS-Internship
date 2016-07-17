@@ -86,4 +86,20 @@ $(document).ready(function(){
                 $('.microsoft-dropdown__subcategory_item:eq(4)').hide();
                 $('.microsoft-dropdown__subcategory_item:eq(5)').hide();
         });
+
+
+
+        /*Show hide */
+
+        $('#show-hide').click(function(){ 
+                $('.microsoft-search__hide').animate({height:'toggle', width:'toggle', opacity: 'toggle'}, 800, "linear");
+                $('.microsoft-search').animate({height:'toggle', width:'toggle', opacity: 'toggle'}, 800, "linear");
+      });
+
+        /*Sandwich*/
+
+        $('#show-nav').click(function(){
+            $('.microsoft-nav').slideToggle();    
+        });
+
 });
