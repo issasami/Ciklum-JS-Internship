@@ -93,7 +93,7 @@ $(document).ready(function(){
 
         $('#show-hide').click(function(){ 
                 $('.microsoft-search__hide').animate({height:'toggle', width:'toggle', opacity: 'toggle'}, 800, "linear");
-                $('.microsoft-search').animate({height:'toggle', width:'toggle', opacity: 'toggle'}, 800, "linear");
+               $('.microsoft-search').animate({height:'toggle', width:'toggle', opacity: 'toggle'}, 800, "linear");
       });
 
         /*Sandwich*/
@@ -101,5 +101,13 @@ $(document).ready(function(){
         $('#show-nav').click(function(){
             $('.microsoft-nav').slideToggle();    
         });
+
+        /*Apple accordion*/
+
+        $("#apple-hide__nav .apple-nav__item ul").hide().prev().click(function() {
+            $(this).parents("#apple-hide__nav").find(".apple-nav__item ul").not(this).slideUp().prev().removeClass("active");
+            $(this).next().not(":visible").slideDown().prev().addClass("active");
+        });
+
 
 });
